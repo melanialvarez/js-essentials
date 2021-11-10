@@ -6,6 +6,7 @@
 `myVar`: Goes to the global scope
 
 
+
 ## `use strict`
 
 * Prevents globals.
@@ -111,6 +112,34 @@ a = {}
 a[{}] = 1
 Object.keys(a) // ["[object Object]"]
 ```
+3.
+`true == 1 // true`
+`false == 0 // true`
 
+4.
+```
+typeof NULL // "undefined"
+typeof null // "object"
+```
 ## Scopes
 _Arrow functions_  are more like function statements, except that they  _bind_  the  _this_  to the  _parent scope_. If the  _arrow function is in the top scope_, the  `this`  argument will refer to the  _window/global scope_, while an arrow function inside a regular function will have its this argument the same as its outer function.
+
+## Hoisting
+JS has two stages
+* compilation
+	* Variables `var` are created in memory (without the value, so they will be assigned the value undefined)
+	* Variables `let, const` are created in memory (without any assignment so if you try to access them before the line where they are assigned to a value, it throws an error).
+	* Functions are also created in memory.
+* execution
+
+# CSS
+## box model
+`box-sizing: content-box;` // Default (border takes pixels)
+`box-sizing: border-box;` // the width will set the max value the element can have (including border)
+
+## display
+`block` will take all available width
+`inline` will take as less space as possible (fit the content)
+`inline-block` will take as less space as possible (fit the content) but you can set width and height to the element.
+`none` will hide element
+
