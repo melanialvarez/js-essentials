@@ -135,11 +135,14 @@ JS has two stages
 # CSS
 ## box model
 `box-sizing: content-box;` // Default (border takes pixels)
+
 `box-sizing: border-box;` // the width will set the max value the element can have (including border)
 
 ## display
 `block` will take all available width
+
 `inline` will take as less space as possible (fit the content)
+
 `inline-block` will take as less space as possible (fit the content) but you can set width and height to the element.
 `none` will hide element
 
