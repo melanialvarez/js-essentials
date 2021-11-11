@@ -211,3 +211,39 @@ Intended for speech synthesizers. (screen readers)
 	...
 ```
 
+## JS inheritance
+
+### Using functions (Prototype model)
+```
+function User(name) {
+	this.name = name;
+	...
+}
+
+function Admin(...args) {
+	User.apply(this, args);
+}
+
+Admin.prototype = Object.create(User.prototype); // Copy User's prototype
+```
+
+### Using classes
+
+```
+class User {
+	constructor(name) {
+		this.name = name;
+	}
+	login() {
+		...
+	}
+}
+
+class Admin extends User {
+	constructor(code){
+		super();
+		this.code = code;
+	}
+	...
+}
+```
