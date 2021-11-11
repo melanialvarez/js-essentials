@@ -210,3 +210,4 @@ Intended for speech synthesizers. (screen readers)
 @media all and (min-width="300px") // from 300px to screen width size it will take this style
 	...
 ```
+
