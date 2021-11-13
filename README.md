@@ -1,3 +1,4 @@
+
 # Javascript essentials
 
 ## `var myVar` vs `let myVar` vs `myVar`
@@ -246,4 +247,16 @@ class Admin extends User {
 	}
 	...
 }
+```
+
+## Fetch
+
+```
+let response = await fetch('<url>', {
+	method: 'POST',
+	headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringyfy(myParamsObj) //body data type must match "Content-Type" header
+});
 ```
